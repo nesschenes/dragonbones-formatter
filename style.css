@@ -1,0 +1,67 @@
+body {
+    background-color: #17202A;
+}
+
+#file {
+    background-color: #555555;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    border-style: dashed;
+    box-sizing: border-box;
+}
+
+#fromFile {
+    border-color: #239B56;
+    color: white;
+    width: 100%;
+    height: auto;
+    border-style: solid;
+    box-sizing: border-box;
+    margin-top: 10px;
+    display: none;
+}
+
+#toFile {
+    border-color: #B03A2E;
+    color: white;
+    width: 100%;
+    height: auto;
+    border-style: solid;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: none;
+}
+
+#inputNameField {
+    background-color: #555555;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    line-height: 32.5px;
+    border-style: double;
+    box-sizing: border-box;
+    margin-top: 10px;
+    display: none;
+}
+
+#renameDiv {
+    margin: auto;
+    width: 100px;
+    text-align: center;
+}
+
+#rename {
+    width: 100%;
+    height: 50px;
+    display: none;
+    font-size: medium;
+}
+
+.basename {
+    color: #F1948A;
+}

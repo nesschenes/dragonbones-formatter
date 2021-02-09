@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>DragonBones Formatter</title>
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+        <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+    </head>
+    <body>
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <div id="file">
+            drag DragonBone file to here.
+        </div>
+        <div id="fromFile">
+            <h3>from</h3>
+            <div id="fromFileList">
+            </div>
+        </div>
+        <div id="inputNameField">
+            輸入新的名稱 <input type="text" id="name"/>
+        </div>
+        <div id="toFile">
+            <h3>to</h3>
+            <div id="toFileList">
+            </div>
+        </div>
+        <div id="renameDiv">
+            <button id="rename">確定</button>
+        </div>
+        <script src="./build/renderer.js"></script>
+    </body>
+</html>

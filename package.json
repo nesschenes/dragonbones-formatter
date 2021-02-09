@@ -1,0 +1,39 @@
+{
+    "name": "dragonbones-formatter",
+    "version": "1.0.0",
+    "description": "a dragonbones tool",
+	"author": "Ness",
+    "scripts": {
+        "build": "tsc",
+        "watch": "tsc -w",
+        "lint": "eslint -c .eslintrc --ext .ts ./src",
+        "start": "npm run build && electron ./build/main.js",
+		"archive": "npm run build && electron-builder --dir",
+		"pack": "npm run build && electron-builder"
+    },
+    "build": {
+		"appId": "ness.dragonbones.formatter",
+		"productName": "DragonBones Formatter",
+		"directories": {
+			"output": "archives" 
+		},
+		"files": [
+			"**/*",
+			"!.vscode",
+			"build/"
+		],
+		"win": {
+		  	"icon": "assets/icon.png"
+		},
+		"mac": {
+		  	"icon": "assets/icon.png"
+		},
+		"linux": {
+		  	"icon": "assets/icon.png"
+		}
+	},
+    "dependencies": {
+        "glob": "^7.1.6"
+    },
+	"main": "./build/main.js"
+}
