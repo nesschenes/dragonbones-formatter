@@ -1,21 +1,21 @@
 {
-    "name": "dragonbones-formatter",
-    "version": "1.0.0",
-    "description": "a dragonbones tool",
+	"name": "dragonbones-formatter",
+	"version": "1.0.0",
+	"description": "a dragonbones tool",
 	"author": "Ness",
-    "scripts": {
-        "build": "tsc",
-        "watch": "tsc -w",
-        "lint": "eslint -c .eslintrc --ext .ts ./src",
-        "start": "npm run build && electron ./build/main.js",
-		"archive": "npm run build && electron-builder --dir",
-		"pack": "npm run build && electron-builder"
-    },
-    "build": {
+	"scripts": {
+		"build": "tsc",
+		"watch": "tsc -w",
+		"lint": "eslint -c .eslintrc --ext .ts ./src",
+		"start": "npm run build && electron ./build/main.js",
+		"pack": "npm run build && electron-builder --dir",
+		"archive": "npm run build && electron-builder"
+	},
+	"build": {
 		"appId": "ness.dragonbones.formatter",
 		"productName": "DragonBones Formatter",
 		"directories": {
-			"output": "archives" 
+			"output": "archives"
 		},
 		"files": [
 			"**/*",
@@ -23,17 +23,22 @@
 			"build/"
 		],
 		"win": {
-		  	"icon": "assets/icon.png"
+			"icon": "assets/icon.png"
 		},
 		"mac": {
-		  	"icon": "assets/icon.png"
+			"icon": "assets/icon.png"
 		},
 		"linux": {
-		  	"icon": "assets/icon.png"
+			"icon": "assets/icon.png"
 		}
 	},
-    "dependencies": {
-        "glob": "^7.1.6"
-    },
+	"devDependencies": {
+		"electron": "^11.2.2",
+		"electron-builder": "^22.9.1",
+		"@types/glob": "7.1.3"
+	},
+	"dependencies": {
+		"glob": "^7.1.6"
+	},
 	"main": "./build/main.js"
 }
